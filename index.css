@@ -7,6 +7,13 @@ html {
     font-style: normal;
 }
 
+button {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -33,7 +40,7 @@ nav div a {
     font-size: 20px;
 }
 
-nav #middle .active {
+.active {
     text-decoration: underline;
     text-decoration-color: #FFBB00;
     text-underline-offset: 4px;
@@ -62,14 +69,14 @@ nav #right {
     font-size: 20px;
 }
 
-nav #right button {
+nav #right a {
     background-color: #FFBB00;
     border-radius: 9999px;
     border: none;
     padding: 2px 25px;
     font-size: 20px;
     cursor: pointer;
-
+    color: #000000;
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -175,6 +182,10 @@ footer a {
     font-size: 20px;
 }
 
+footer img {
+    cursor: pointer;
+}
+
 #footer-left {
     display: flex;
     align-items: center;
@@ -193,4 +204,269 @@ footer a {
     display: flex;
     align-items: center;
     gap: 90px;
+}
+
+.user p {
+    margin-left: 10px;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu p {
+    margin-right: 5px;
+}
+
+#member-middle {
+    gap: 50px;
+    margin-left: 230px;
+
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 15px;
+    width: 290px;
+    height: 350px;
+    background-color: white;
+    top: 85px;
+    right: 30px;
+    border-radius: 15px;
+}
+
+.dropdown.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown .dropdown-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown .account-options {
+    color: #57636C;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.dropdown .gamer-name {
+    color: #000000;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.dropdown .email {
+    color: #FFC90E;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.dropdown-middle {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.dropdown-middle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+}
+
+.dropdown-middle a p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+.logout {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.form-parent {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 400px;
+    height: 700px;
+}
+
+.form .button-login {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 9999px;
+    padding: 12px;
+    font-size: large;
+    background: linear-gradient(to right, #FFC90E, #D33508);
+    margin-top: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.register-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 9999px;
+    padding: 12px;
+    font-size: large;
+    background: linear-gradient(to right, #FFC90E, #D33508);
+    margin-top: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.form-email span {
+    font-size: 20px;
+}
+
+.form-password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+}
+
+.form-password img {
+    position: absolute;
+    top: 38px;
+    right: 10px;
+}
+
+.form-password a {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-password span {
+    font-size: 20px;
+}
+
+.login-text {
+    text-align: center;
+    font-size: 36px;
+}
+
+.sign-in-text {
+    text-align: center;
+    margin-top: 45px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form input {
+    border: #FFBB00 1px solid;
+    background-color: #D9D9D91A;
+    border-radius: 9999px;
+    padding: 12px;
+    color: white;
+    font-size: large;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.sign-in-container img {
+    cursor: pointer;
+}
+
+.form-bottom-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.form-bottom-text a {
+    color: white;
+    margin-left: 2px;
+}
+
+.welcome-page {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-logo {
+    width: 364px;
+    margin-top: 20px;
+}
+
+.welcome-content {
+    text-align: center;
+    max-width: 839px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.welcome-content h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.welcome-content p {
+    font-family: inter;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.welcome-button {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 9999px;
+    padding: 4px;
+    font-size: large;
+    background: linear-gradient(to right, #FFC90E, #D33508);
+    margin-top: 250px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }

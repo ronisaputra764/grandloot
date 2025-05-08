@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page - Guest</title>
+    <title>Main Page - Member</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <div class="wrapper">
         <nav>
             <img src="assets/RANDLOOT 1.png" alt="logo">
-            <div id="middle">
+            <div id="member-middle">
                 <a id="games" class="active" href="">Games</a>
                 <a id="tournament" href="tournament.html">
                     <p>Tournament</p>
@@ -28,7 +28,39 @@
                     <img src="assets/wallet 1.png" alt="wallet image">
                     <p>$0.00</p>
                 </span>
-                <a href="login-page.html">Account</a>
+                <div class="user">
+                    <img src="assets/Ellipse 1.png" alt="">
+                    <p>Username</p>
+                </div>
+                <div class="menu">
+                    <p>Menu</p>
+                    <img src="assets/menu 1.png" alt="">
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-top">
+                    <p class="account-options">Account Options</p>
+                    <p class="gamer-name">Gamer Name</p>
+                    <p class="email">Email</p>
+                </div>
+                <div class="dropdown-middle">
+                    <a>
+                        <img src="assets/profile.png" alt="Profile">
+                        <p>Profile</p>
+                    </a>
+                    <a>
+                        <img src="assets/dollar.png" alt="Dollar">
+                        <p>Withdrawals</p>
+                    </a>
+                    <a>
+                        <img src="assets/email.png" alt="Contact">
+                        <p>Contact Us </p>
+                    </a>
+                    <a href="login-page.html" class="logout">
+                        <img src="assets/logout.png" alt="Logout">
+                        <p>Log Out</p>
+                    </a>
+                </div>
             </div>
         </nav>
         <main class="content">
@@ -77,6 +109,23 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const dropdown = document.querySelector('.dropdown');
+
+        menu.addEventListener('click', (e) => {
+            e.stopPropagation(); // mencegah event bubbling ke document
+            dropdown.classList.toggle('show');
+        });
+
+        // Menutup dropdown jika klik terjadi di luar
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target) && !menu.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 
 </html>
