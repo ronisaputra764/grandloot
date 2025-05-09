@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="assets/RANDLOOT 1.png" alt="logo">
+        <div id="member-middle">
+            <a id="games" href="main-page-member.html">Games</a>
+            <a id="tournament" href="tournament.html">
+                <p>Tournament</p>
+                <span>6</span>
+            </a>
+
+        </div>
+        <div id="right">
+            <span>
+                <img src="assets/wallet 1.png" alt="wallet image">
+                <p>$0.00</p>
+            </span>
+            <div class="user">
+                <img src="assets/Ellipse 1.png" alt="">
+                <p>Username</p>
+            </div>
+            <div class="menu">
+                <p>Menu</p>
+                <img src="assets/menu 1.png" alt="">
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-top">
+                <p class="account-options">Account Options</p>
+                <p class="gamer-name">Gamer Name</p>
+                <p class="email">Email</p>
+            </div>
+            <div class="dropdown-middle">
+                <a href="profile-edit.html">
+                    <img src="assets/profile.png" alt="Profile">
+                    <p>Profile</p>
+                </a>
+                <a href="payment.html">
+                    <img src="assets/dollar.png" alt="Dollar">
+                    <p>Withdrawals</p>
+                </a>
+                <a href="support.html">
+                    <img src="assets/email.png" alt="Contact">
+                    <p>Contact Us </p>
+                </a>
+                <a href="login-page.html" class="logout">
+                    <img src="assets/logout.png" alt="Logout">
+                    <p>Log Out</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="support-content">
+        <div class="support-left">
+            <h2>Support center</h2>
+            <h3 class="lets-talk">Let's talk</h3>
+            <p class="message">Do you have any suggestions or need help? Contact us. <br> We'd love to hear your
+                suggestions or help you
+                with <br>
+                anything youneed
+            </p>
+            <h3>Email</h3>
+            <p style="margin-bottom: 60px;">Ouremail@help.com</p>
+            <h3>Socials</h3>
+            <p style="margin: 5px;">TikTok</p>
+            <p style="margin: 5px;">Facebook</p>
+            <p style="margin: 5px;">Instagram</p>
+        </div>
+
+        <div class="support-right">
+            <form class="">
+                <div class="">
+                    <span>Name</span>
+                    <input style="border-radius: 10px;" type="email">
+                </div>
+                <div class="">
+                    <span>Email</span>
+                    <input style="border-radius: 10px;" type="email">
+                </div>
+                <div class="">
+                    <span>Subject</span>
+                    <input style="border-radius: 10px;" type="text">
+                </div>
+                <div class="">
+                    <span>Message</span>
+                    <textarea rows="6" style="border-radius: 10px;" type="password"></textarea>
+                </div>
+                <a class="support-button">Submit</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-left">
+            <img src="assets/RANDLOOT 1.png" alt="logo">
+            <a href="privacy-policies.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+        <div id="footer-middle">
+            <img src="assets/social-media.png" alt="logo">
+            <img src="assets/facebook (1) 1.png" alt="logo">
+            <img src="assets/instagram.png" alt="logo">
+        </div>
+        <div id="footer-right">
+            <p>Language</p>
+            <img src="assets/Polygon 1.png" alt="logo">
+        </div>
+    </footer>
+</body>
+<script>
+    const menu = document.querySelector('.menu');
+    const dropdown = document.querySelector('.dropdown');
+
+    menu.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target) && !menu.contains(e.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
+</script>
+
+</html>

@@ -169,6 +169,7 @@ footer {
     margin-top: 60px;
     display: flex;
     align-items: center;
+    padding-top: 120px;
     justify-content: space-between;
     padding: 20px 30px;
     background-color: #000000;
@@ -236,6 +237,7 @@ footer img {
     top: 85px;
     right: 30px;
     border-radius: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.184);
 }
 
 .dropdown.show {
@@ -313,8 +315,8 @@ footer img {
     height: 700px;
 }
 
-.form .button-login {
-    width: 100%;
+.button-login {
+    width: 94%;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -329,7 +331,7 @@ footer img {
 }
 
 .register-button {
-    width: 100%;
+    width: 94%;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -390,6 +392,19 @@ footer img {
 input:focus {
     outline: none;
     box-shadow: none;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-parent {
+    margin-bottom: 280px;
 }
 
 .form input {
@@ -457,6 +472,7 @@ input:focus {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
     color: white;
     border-radius: 9999px;
     padding: 4px;
@@ -469,4 +485,305 @@ input:focus {
     justify-content: center;
     align-items: center;
     gap: 7px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.privacy-policies {
+    color: #000000;
+    max-width: 1000px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.privacy-policies span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.edit-photo {
+    height: 119px;
+    width: 119px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    border: #FFBB00 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+}
+
+.edit-profile-text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.current-profile {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+
+.current-profile h1 {
+    margin-bottom: 250px;
+}
+
+.current-profile p {
+    font-size: 20px;
+}
+
+.current-profile .email {
+    margin-bottom: 50px;
+}
+
+.current-profile .player-name {
+    margin-bottom: 50px;
+}
+
+.current-profile .current-information {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.payment-form {
+    width: 531px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
+
+.payment-form h2 {
+    font-size: 28px;
+    margin-bottom: 70px;
+}
+
+.payment-form h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.payment-form form {
+    background-color: #D9D9D90F;
+    padding: 20px 45px;
+    border-radius: 15px;
+}
+
+.payment-form form p {
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-top: 35px;
+}
+
+.payment-form span {
+    color: #19DE43;
+}
+
+.payment-form input {
+    background-color: #D9D9D91A;
+    border: #B8B8B8 1px solid;
+    border-radius: 10px;
+    color: #B8B8B8;
+    padding: 8px 15px;
+    font-size: 20px;
+    width: 95%;
+}
+
+.payment-form input::placeholder {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-information input {
+    width: 120px;
+}
+
+.withdraw-button-parent {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.withdraw-button {
+    width: 150px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 9999px;
+    padding: 9px;
+    font-size: large;
+    background: linear-gradient(to right, #FFC90E, #D33508);
+    cursor: pointer;
+    border: none;
+}
+
+.payment-method {
+    width: 471px;
+    position: absolute;
+    padding: 20px;
+    top: 144px;
+}
+
+.payment-method h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 100px;
+}
+
+.payment-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 40px;
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 99999px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-container {
+    border-right: 1px solid white;
+    padding: 35px 20px;
+}
+
+@media (max-width: 1600px) {
+    .grid {
+        display: flex;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .payment-method {
+        display: block;
+        position: static;
+        margin-top: 79px;
+    }
+
+}
+
+.support-content {
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 350px;
+}
+
+@media (min-width: 1200px) {
+    .support-content {
+        display: flex;
+        justify-content: space-between;
+        min-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+}
+
+.support-left h2 {
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+
+.support-left h3 {
+    font-size: 24px;
+}
+
+.support-left p {
+    font-size: 20px;
+}
+
+.lets-talk {
+    margin-bottom: 60px;
+}
+
+.message {
+    margin-bottom: 60px;
+}
+
+.support-right {
+    margin-top: 150px;
+}
+
+.support-right form {
+    width: 440px;
+}
+
+.support-right input {
+    width: 100%;
+}
+
+.support-right span {
+    font-size: 20px;
+}
+
+.support-right input {
+    background-color: #716C6C;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 20px;
+    width: 93%;
+    margin-top: 4px;
+}
+
+.support-right textarea {
+    width: 92.50%;
+    background-color: #716C6C;
+    color: white;
+    padding: 8px 15px;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.support-button {
+    width: 94%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 9999px;
+    padding: 12px;
+    font-size: large;
+    background: linear-gradient(to right, #FFC90E, #D33508);
+    margin-top: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.support-right div {
+    margin-bottom: 30px;
+}
+
+.grid {
+    margin-bottom: 100px;
 }
